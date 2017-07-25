@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+body {
+  background-image: url('../nasa-logo-2.jpeg');
+   background-attachment: fixed; 
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -21,4 +24,42 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.sidebar {
+    background: rgb(61, 79, 93);
+    color: #fff;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+
+.margin {
+  margin: 20px;
+}
+.margin-left {
+  margin-left: 50px;
+}
+
+
+.text-center {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.img {
+  height: 300px;
+  width: 700px;
+}
+
+.form {
+  border: 3px solid black;
+  border-radius: 6px;
 }

@@ -8,12 +8,9 @@ class GetImageButton extends Component {
     }
 
     render() {
-        return (
-            <div>
-                <button onClick={this.props.onClick}>Get Images
+        return (     
+                <button  className="pure-button pure-button-primary margin-left margin" onClick={this.props.onClick}>Get Images
                 </button>
-
-            </div>
         );
     }
 }

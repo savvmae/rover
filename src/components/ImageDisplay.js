@@ -11,14 +11,15 @@ class ImageDisplay extends Component {
         let { data } = this.props;
         let renderImages = data.map((image) => {
             return (
-                <li key={image.id}>
-                <img src={image.img_src} />
-                </li>
+                <div key={image.id}>
+                <img className="img" src={image.img_src} />
+                </div>
             )
         })
+        let renderSorry = <div className="brand-title"> Sorry, no images to show </div>
         return (
             <div>
-                { renderImages }
+                { renderImages.length > 1 ? renderImages : renderSorry }
 
             </div>
         );
